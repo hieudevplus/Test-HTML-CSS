@@ -368,3 +368,6 @@ footer{
     color: white;
     margin-right: 20px;
 }
+footer h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
