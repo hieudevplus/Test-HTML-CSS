@@ -82,11 +82,15 @@ nav{
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #19161B;
+  background-image: linear-gradient(black,#19161B);
   margin-bottom: 0px;
+  box-shadow: 0 0 3px #27212b;
 }
 .nav-link:hover{
     color: #B8B8B8;
+}
+.navbar-toggler-icon{
+    color: white;
 }
 /* Menu */
 .right-menu{
@@ -100,6 +104,10 @@ nav{
     line-height: 1.5;
     margin-left: 5px;
     font-weight: 600;
+    animation: vetor 0.5s ease-in alternate infinite;
+}
+.font-logo{
+    color: #FFB577; font-weight: bold;
 }
 /* Header */
 
@@ -119,6 +127,7 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
     padding: 10px 15px;
     font-weight: 600;
     border: 2px;
+    
 }
 .header-left ul{
     list-style: none;
@@ -141,13 +150,21 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
     margin-top: 120px;
 }
 .know-more-img {
-    padding-left: 20%;
+    padding-left: 6%;
 }
 .know-more-right img{
     width: 100%;
 }
 .img1{
-    padding-top: 140px;
+    padding-top: 15%;
+    animation-duration: 0.3s;
+    animation-iteration-count:1;
+    transform-origin: bottom;
+}
+.img2{
+    animation-duration: 0.3s;
+    animation-iteration-count:1;
+    transform-origin: bottom;
 }
 .know-more-left p{
     font-weight: 400;
@@ -185,6 +202,8 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
     background-color: #0000001f;
     padding: 50px;
     border-right: 2px solid #19161B;
+    transition: 0.1s;
+    transition-timing-function: ease-in;
 }
 .sv-item h3{
     margin-top: 30px;
@@ -220,9 +239,17 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
 .mn-item{
     padding: 20px;
     padding-bottom: 0px;
+    overflow: hidden;
+}
+.menu-img{
+    width: 100%;
+    overflow: hidden;
 }
 .mn-item img{
     width: 100%;
+    transition: 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+    display: block;
+    
 }
 
 /* Quote */
@@ -304,6 +331,7 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
 .blog-item{
     background-color: #1F1D21;
     width: 98%;
+    transition: 0.2s;
 
 }
 .blog-item h3{
@@ -335,6 +363,9 @@ header, .blog, .contact,.know-more,.quote,.serving,.menu{
 /* Details */
 .detail-item{
     margin-top: 30px;
+}
+.contact img{
+    width: 100%;
 }
 
 /* Footer */
@@ -371,4 +402,55 @@ footer{
 }
 footer h3{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Responsive */
+@media (max-width: 900px){
+    header,footer{
+        margin-top: 60px;
+    }
+    .quote-text{
+        padding-top: 15px;
+    }
+    .quote-text h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .quote-text p {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer-menu{
+        display: none;
+    }
+}
+@media ( max-width: 640px) {
+    
+    .right-menu{
+        display: none;
+    }
+    .header-right img{
+        padding-left: 0px;
+    }
+    .know-more-img{
+        padding: 0px;
+        width: 50%;
+    }
+    .know-more-right{
+        margin-top: 50px;
+    }
+    
+}
+@media (max-width: 390px){
+    .know-more-img{
+        width: 50%;
+    }
 }
