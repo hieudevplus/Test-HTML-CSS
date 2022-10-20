@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styte.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="css/hover.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="boby dark-bg">
@@ -49,14 +52,14 @@
           </div>
         </div>
       </nav>
-      <header>
+      <header >
         <div class="container">
           <div class="row">
             <div class="header-left col-md-6 col-sm-12">
               <h1>We serve high quality foods of all kinds.</h1>
               <p>Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text.</p>
               <button class="header-button yellow-bg">View Menu <i class="fa-solid fa-arrow-right-long"></i></button>
-              <ul class="infos">
+              <ul class="infos ">
                 <li>
                   <h4>Opening Times</h4>
                   <p>Sunday to Saturday  l  09:00 AM to 11:00 PM</p>
@@ -80,7 +83,7 @@
       <article class="know-more">
         <div class="container">
           <div class="row">
-            <div class="know-more-left col-md-6">
+            <div class="know-more-left col-md-6" data-aos="fade-up" data-aos-duration="1500">
               <div class="title">
                 <p class="caption yellow-font">KNOW MORE ABOUT US</p> <div class="line-after"></div> 
               </div>
@@ -92,17 +95,17 @@
               </p>
            
               <div class="row feature">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                   <b><i class="yellow-font fa-solid fa-filter"></i> 10+ People</b>
                   <p class="under-title">We are Small Team</p>
                   <p class="feature-text">Through True Rich Attended does no end it his mother since favourable.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                   <b><i class="yellow-font fa-solid fa-filter"></i> 2014</b>
                   <p class="under-title">We are From</p>
                   <p class="feature-text">Through True Rich Attended does no end it his mother since favourable.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                   <b><i class="yellow-font fa-solid fa-filter"></i> 200K</b>
                   <p class="under-title">We Served</p>
                   <p class="feature-text">Through True Rich Attended does no end it his mother since favourable.</p>
@@ -110,17 +113,13 @@
               </div>
               <button class="header-button yellow-bg">View Menu <i class="fa-solid fa-arrow-right-long"></i></button>
             </div> 
-            <div class="know-more-right col-md-6">
+            <div class="know-more-right col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
               <div class="row">
-                <div class="col-md-6">
-                  <figure class="know-more-img img1">
+                <div class="know-more-img img1 col-md-6 col-sm-6 "data-aos="fade-up" data-aos-duration="2000">
                     <img src="public/image/Know more Image 1.png" alt="">
-                  </figure>
                 </div>
-                <div class="col-md-6">
-                  <figure class="know-more-img img2">
+                <div class="know-more-img img2 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
                     <img src="public/image/Know more Image 2.png" alt="">
-                  </figure>
                 </div>
               </div>
             </div>
@@ -145,7 +144,8 @@
             </div>
           </div>
 
-          <div class="row serving-items">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" class="row serving-items">
             <div class="sv-item col-md-4">
               <div class="icon">
                 <i class="fa-regular fa-cake-candles yellow-font"></i>
@@ -194,7 +194,7 @@
 
       <!-- Menu -->
       <article class="menu">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2500">
           <div class="row justify-content-between">
             <div class="title">
               <p class="caption yellow-font">OUR MENU</p> <div class="line-after"></div>
@@ -211,7 +211,9 @@
           </div>
           <div class="menu-items row">
             <div class="mn-item col-md-4">
-              <img src="public/image/Image.png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image.png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -220,12 +222,13 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             <div class="mn-item col-md-4">
-              <img src="public/image/Image (1).png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image (1).png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -234,12 +237,13 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             <div class="mn-item col-md-4">
-              <img src="public/image/Image (2).png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image (2).png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -248,12 +252,13 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             <div class="mn-item col-md-4">
-              <img src="public/image/Image (3).png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image (3).png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -262,12 +267,13 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             <div class="mn-item col-md-4">
-              <img src="public/image/Image (4).png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image (4).png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -276,12 +282,13 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             <div class="mn-item col-md-4">
-              <img src="public/image/Image (5).png" alt="">
+              <div class="menu-img">
+                <img src="public/image/Image (2).png" alt="">
+              </div>
               <div class="menu-info ">
                 <div class="row justify-content-between">
                   <div class="col-md-6">
@@ -290,8 +297,7 @@
                   <div class="offset-md-4 col-md-2">
                     <p>$08.85</p>
                   </div>
-                </div>
-                
+                </div> 
               </div>          
             </div>
             
@@ -305,7 +311,7 @@
       </article>
 
       <!-- Quote -->
-      <article class="quote">
+      <article class="quote" data-aos="fade-up" data-aos-duration="2500">
         <div class="quote-content row">
           <div class="quote-left col-md-4 offset-md-1 ">
             <div class="quote-text">
@@ -315,28 +321,28 @@
                   You can move the text by dragging and dropping the text</p>
             </div>
             <div class="person-tab row">
-              <div class="left-tab col-md-10">
+              <div class="left-tab col-md-10 col-sm-10">
                 <b>Joheny Andro</b>
                 <p>Bhubaneswar, Odisha</p>
                 <hr>
               </div>
-              <div class="right-tab col-md-2">
+              <div class="right-tab col-md-2 col-sm-2">
                 <img src="public/image/join.png" alt="">
                 <hr>
               </div>
             </div>
           </div>
           <div class="quote-right col-md-7">
-            <img src="public/image/Image (6).png" alt="">
+            <img class="quote-play" src="public/image/Play.png" alt="">
           </div>
         </div>
       </article>
 
       <!-- Blog -->
       <article class="blog">
-        <div class="container">
+        <div class="container" >
           <h2>Read Our Lastest Blog</h2>
-          <div class="row blog-items">
+          <div class="row blog-items" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-md-4">
               <div class="blog-item">
                 <div class="blog-item-top">
@@ -382,7 +388,7 @@
 
       <!-- Contact -->
       <article class="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2500">
           <div class="row">
             <div class="col-md-4 contact-details">
               <div class="detail-item">
@@ -405,19 +411,19 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 contact-map">
+            <div class="col-md-8 contact-map">
               <img src="public/image/Map.png" alt="">
             </div>
           </div>
         </div>
       </article>
       <footer>
-        <div class="row footer-top justify-content-md-center">
-          <div class="col-md-auto">
+        <div class="row footer-top justify-content-center">
+          <div class="col-md-auto col-sm-auto">
             <h3 class="yellow-font">Finsweet</h3>
           </div>
         </div>
-        <div class="row footer-menu justify-content-md-center">
+        <div class="row footer-menu justify-content-center">
           <div class="footer-menu-items col-md-auto">
             <a>Home</a>
             <a>Menu</a>
@@ -444,5 +450,8 @@
       </footer>
     </div>
   </div>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
